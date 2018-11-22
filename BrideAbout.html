@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href= 'https://fonts.googleapis.com/css?family=Great+Vibes' rel="stylesheet" type='text/css'>
+<style>
+
+ul {
+     padding: 0px 10px 0px 10px;
+     text-align: center;
+
+   }
+   li {
+     color: #9f6e9f;
+     display: inline;
+     padding: 0px 10px 0px 10px;
+}
+
+body {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExIVFhUXFRUVFxYWFRUXFRcVFRUWFhUVFRcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICYvLS0tNy0tLS0tLS0tLS0tLy0tLS0tLS8tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALoBDwMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAABAgMEAAUGB//EAD4QAAEDAgQDBQUFBwQDAQAAAAEAAhEDIQQSMUFRYXEigZGhsQUTMsHRQlJy4fAUI2KCorLxQ1OS0mOjwhX/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQIDBP/EACkRAAICAgICAQMDBQAAAAAAAAABAhEhMRJBA1FhEzLwQnHhIoGRsfH/2gAMAwEAAhEDEQA/AP0OCTAFtz9FcABedg3lggnM2SZjTwtC3NcCoi01aLkmnTHCoEuVOFSIZy4hFcRoeCGNHZVwamBXSlgMnQgFxB2UKgcS2LcZ+SmUqLjGzQ0pwEuWEQ5NOtkteguKWUwXAXQ7YLBwaiigQnoRxSi6aEspNjSGQKZeZi8eQ/JTGZwBJHADnxRKairY4wcnR6C4rzMJjP8AcOWbtcI92RyMWPI+a3gyJa4EdxHiEoztBKFMcqFSvH2SeicvcPs+BHzhZ8VizTYSWEcDLYnib6DU8giUvyhxj+WYK9c1DcOAzRF9Bxy319FdpYBAYegbH90Sq4YkiAIHEzfruVaoyOay4vdmtrR5lb2WH3bTydH5fENkLmexImSD+IF3qV7DQY0hMrXhjsh+WWjzqOBy2zd2VoHdAVBhhuXHvI9FrKjUHBVwS0Tzb2YcFhwWMcHHib65r375T0yXPgmQ3W1p5D5o+zG/umyRGUSbbarTh6eUIisIcnlhLUsKiUhaGQhpA2jnZMylFhb0TNN/BNKjBdsGY8E4cEJXZjojkFD5guebIWXCmENtiSQ8IhqAYmEhAHQuARDgpsdPRJtDSZzqW7dfJSfnbceBuO6AtQCFWq1glzgOpAUuK3opSetiUy4xcQqSAsxxDHGGmSeHJOKDj8RkcBbxQpesjcfeCvvJ0TwuYwAWEJsoVpPszbXRNzDx8lF2EJ/1Hd0BaCwforgzmk4J7GpNaPOr+y2n4n1HDgXW8lbDezabJygidYJWomTHDX6J0Lxxu6G/JKqswtw+R0A9l3Szvz+Sxe1WGgHV2bDttsA4cbaOHFe0Qs+KpAsc112EEHw0SlDGP+BGWfzIWXAM6hYAPevknsMJb1IIk+I8vGdPHVKdNoewO7AMgwdgAWneTx27luw+Hhgby247lH3D+1so1wOmy4N3RbRACeFavsh10LCVOgqJEIQITlAoA8WiBOUuMNgkfxTvxEj1XqMEALx8TQd71tTs5czqbjBzdp5I20sB3r2gQsvH2beTSFQTEJStTE4UgiWDifFNuBxRLVDSKTYOiLQmATgJUOwQuYOSJCYBVWSbFBhEFEC6JaimMm6kHahKMONLjo4qz6jWiSQBzKgKjnXZZp1cRf8AlB1UNRT+S48n+xDECsLMe0zu4XHhr4KLcLXF/wB04884J77r0aQa2ddbkyfNUe4QIvOkbpcE8sfNrCR5TMY9jpq08rYgFpDw3iTYEDReoyu0iQ4EHcGUtOkd7ny6BYa+Aex/vKOXTtUzYE8WnYoXKPyD4y/MHoPqZddOKdplZsHi21BO4+Jp+Jp4EbKoqR09OSpPu8ENdVksg4oXRayFRIrGwE66EUxClY/at2ZN3kNjkfi/pBW0rC9/ac86MGUddXH0H8pUz1RUN2YcbSzOawiwaZi8gEfEBeNvFWwuLps7Pw9ZynmHaQtHs9hIzkQXX42212hVqYJh2jpb01WfB/dHZrzS/plooDPBArE72PSBlrRPPQ8uSenhKbhdskWM3I3iVacrz/v+CGodN/4/k0ygszsE1oORxZvY28DZZRjyDAIqc2ySOoaD8kS8nH7gj4+X2npFArD+11ZvSMdw+aux7nDYdD+SF5EwfjaPPp4jOIMgmo4kDWGPt00C9IOB5rJhcN2yTxPyWws4JeNSrI/I46QuVKWJi/iuJV4IyBtIAzqTvJ8uCIdG8rNUwE61KnTNHop//nujsVXjqQ8f1CfNZybXRokntnqNcDoiF4vv6tP42Zhs5knfQjX1W6jjpAcGlzTu28dRqiPlT2KXia0bgEQsbsY6LUn9+UfNUpV3OHZYZ/iMD6+Sr6kbon6cqs0wlfwBv6JWNedS0dAfU/RWa2FWxaJspbuIJ2tAHcqtC5EBNKhN2K90DSUtFkfr0St7R5Ax4K4SWcjeFRxQIRK4lMkx47CteJjtAHKQS0zt2hsoYWuwnJLg4asf8XW/xdRIXoDioYzDh4g2IMtcNWu4hZSXaNYvpladRVXmUsUWENq5Wk6OB7LuV7g8j3StlOvNgO/QJxmmKUGi65LB5IOAGpV2RQuKrZGOdwBPgvJrYgFrabQXzGbLBBvL5JMXv4q9ek2pUGYdlozEOmIuBINuJ7lXBtzuL4hoGVg0sDd3f6ALJtyZquMVkf3tQ2bTy83kW7mz6oilVOtRo/Cy/i4la0CtOPt/n9iOfpL8/cyOwU/E95/mLf7YUqnsxkWkHk53ndeggQj6cfQfUl7PPpYCn9pkkfeJcO4ulamNAFhCrCUpxiloUpOWxSovpbixVS2NECm1Yk6MLKZJJkrS11krjeeNkgpkaR3qFjRo87HJUnuA+iIadz4WTAQlbYqSLAd6ZoCGYIBs/UFaEFIWOt7OGbPTcWO3i7XfibpPPVbOC57wO/RJpPYJvo879orsPapio0fbp2Pew69xW7DYhtQSxzXdOPA8FZrVlxXs5j7iWO++zsu7zv3pU0O0zYEQV51L2a4f69Ujh2PWJVf2R40rP/mawjyAKdv0FL2bUC7ZYv2ao4XruH4WtA8CCfNQqYdpEOqPeeDCWj+kx4lJyGolavtKnTcWl0GfCYWulXa8AsIIOhGi8tvsRmpZrxqO8+JS0y+k95aIpSAYEhpgXHLY8PFZKc08rBq4Qaw8nt2Ak+JU/ezoCfTxKWm1ph055uDYjqIsrU9FrlmWELDjuB018VxpDn4lPK5OkK2QrUGuEFoI4EBZMK33bsjnG0lhOpbaxO5Ex4Lc546rPiML7wCSQQZaRq06SOPRZyWcFx1k0Codh37IZZPz+QXmftppn3dQGQR+8HwwdCfuk8FpxmKtkYbkTbUDj+vojmmshxfRKs0vcSLAkMEbhsknzPkvSpsAAA0FlhwtnBsmw0MWB006FegqguxTfRyCMrlZmcguXIAVAokpSgBUrkxdySmTySGZsY0kWiZELntjtbqj6YjdNl2U8cl8qRIuA1shmHEJsoGgCDmA7DwRkMDh54KjeiAR3VkDNNguDZM+CV2wVQgAhGEEZTEEqLq02aJ9PzRdfoqNapedFKlsn7qde1/aO5FrdD/hPOwUn9s5R8I158vqlgabCX5rN/5f9eKqymAICLQhUdAlPWSfhHmvovpOc6kMzbzTmIO5ZtfgtOExYqCW6frVWayRfTzPVY8VhjTd7ykPxsH2hxHBw81nlZWjTDw9mqtVDRJIaFlbiXm5ovIPNs97ZsnoYbMRUeJdsNQ3kOfNbYT4tiujEMY7/Yqf+v8A7KZ9rsGocI+KWns8My9KFlx1FrhB3tp4pSUoq0xx4t00QwoD87iJDjYa9mAPOF5+G/du4ioJaNwQey08oIvyK04av7oupuMADMHHTKZt3aeCTBUR7wPI+IEt4CTMR3z3lYrNe+zZ4v10ephaOUSTLjcnaeQ2CugiutKjlbs5BFKXATNhzQI4lAuU2vLtLN47noE+UBSneimq2KXcAgOfgmyoEJ0FhKQrgFzimISoYBQ+iSuYiTulfXAvHepclZSjjBTKlJQ99OgJ57JHNcdfWPki10FPstmjVM526m5kxKBdLstuPcm2xJJhedN1VjTufBLWqBovxAHVBzyDZS6TKVtFhT5nxKDmtAkrvejvU60O7J1N45A6pyqsCjd5K+9bHyXNcXaWG5+QSOoD6yuFWOzbNt9Slb7HS6KPP2W24ngPqqU2ACAkoMgX13PEqqpLslvo4qdS5AHGSqFJR0k73Q/QL2UQIXSuBTJEa2J8VRJU4p5SXob9gcUrWbnVc4mYTI2GjyfaVHPUawizhPIBpOb+8DvXYj2dl7VMxvkJOWeI+6eivT7VcmLNbA/mMn+0LaRKxXjUrfybvyOKS+DPgsTmEEQ4WIOxWlYMRRM52/ENjo4fdPyKNP2k06SXbti4PB3DfXgrU6xIzcLyjcTCzhucyfhGg4/xH5fqOEu+KByF/ErQE/u/YX2/uclLUyUlWQcSkcSmLglLuCBiOcBqUlzy6qmUJTfolQ7IVGCDuVwgRN1VxAHBTYyAFPErlgdrbLijKUq0Zsyvrm4Bko4ZjhJmSY/QSVMrHRMSJj9bq1FznaWHHfw2WO5ZN/04OLTIzxEytHvJ0E89vzXMogc+ZuVULSMWjOUkxGUuKanSaLgXTAoquKJ5MWsbFJg2RLjv6bLsSdBxcPKT8lUGY4Kdysr9JRcFwXSrIEq8OJThqWL9PmnhT2M4lFKiExHJQYkJlN8yI70mNDNCYlLJ4LPjsQWsJDb6CTAk2CVpIKtkvZMEF/3ifK0eR8Strnws2Cw+RgaSSdzO51RaDMT37qItxilRrNKUmw3dpbnw6KTvZdLXL2t3AkO/5C62NbCJV8V2RyfR5rsK9hzNe543Y6NP4XRM9Vsw+ID2hw3/AFCDsS3btH+G/ovKfTqNcX3bTJlzQe1+IRoNyAVDlxeClHls9SriYMAEu4DUddglDah3Delz46eSpQDQBliOSor4t7ZPJLSEbTA/NElEpSqqtE3YsSuK4lTzT0RoAgKLjFttvorpXooLEYUDfkslKqWuyu6jmtFWrClStFOOQYekBJjv38VTDnXqUHmyGF0I5n1QlTSBu02aAmCUIgqyBwVyTMjn4JATri7PxH+0quWYUKrjnYOTj6fVaKYUrbLeEhmpsyUG8Kdd2gH6CbdISVss1MlZoimiWFcQlzouKAOlCAEAwfoo5AlkeDs4WH2gHE0xaC8TOtgXDpcBbiV5tWuKlQAExTMkC8uiw5C/6hR5HgvxrOD0I70S1TzuNg3LzMeQC40idXnoIHnr5p36Qq9hdiGi2p4C5/LvS+7L/is37vH8XHonp0Q3Sy5sgmTIOiKf6gtL7RwALAIEJkFZB59Ie6fl+w74f4Tu3puFulTxNEPaWnQ+IOxHArLQxBafd1D2tnbOHyPJTfHBVcjalc5J74cUhaXX0Hmm5ehJewVn7BFpCLWBA6qc7ZWNDSlKJUcRWDGlx/MnYDiVoQYcTUAfF7Ad0yrU6TtSe7gvOY2o4PcGw6S4mxkt+FjeQgCevEr1KJJAKxirNZOimp6JqRu7r8gpZrGNzHyVWNWnZHRSUQgEQqJGaAmShSc8mzfH6JPA0rJiqPegToCO+xieK2Uz6rM7DNLcv+Z49VTCOlonUWPUaqI2nkuVNYNDmypt3nVUlLvKpolMoEoqgmEDdIGEGyG30CS7CIzESnDRNkjQdDrxHoqtCSG2cUriiXINCbJR52KwsvbcuP3Z23PKF6FGiGi3ks+b9/H/AI//AK/XgtZKzhFJtms5OkjkQlRlamIUr2yjKCAJvz2iNbzwTSiSp+8CWh7DB4rNi8JnBBOvK/UcFoknl6ri3qk4poabTPOwNYTkfZw02DgPtD6bL0JWXGYQPsRYXsSCDxBFwsnvH0TdxdT3n42f9m+Y9JTccMtrllHqEpSoNxTXDM1wjqFJ2ObxHqOtlTkkQot6NNWoGgkkADcrwGYp1Z+YECSWtafssFjUI2cTIH+V3tDGioWgE5S4AROZ5F5A+7aJ716mBwgYCYGY3NvAd2im3J40VXFWx2sAblbwiyGEdLATwCusWFptBdBPxfDPwmBYRtv3qtNE7TKsu1o3JnwMlalkc6AOI25HVaQU4hIcJgUi6VRIKxJsN9eiqyAIUaQuVWUl7G/Q6jOV/Jw/qH5eiqCo40wwnhfwKUtWOO6LVnwOqYGbaKbL34WTvfEDcpfIfBRohAv2Cm0Hc29VUJrItHEwipvIQomyfwBULpU6r8oLuFz0WakDV7Tvg1a3j/E76foS30NK8k6Di6s54+CGsB2MSZHG5juXolJU0TSiKocndDIIApXvAuSqIGlI6qFOS7kPMqjWgKbb0VSWxXSeSYNhI+s0G5AJsExemkgtjSghK4pkgKR7AdQmJWV1UuMQcvHilJpFRTZhr+x6TyewAOLSWz4LFiMFiGNcGPDgA4NzA54I0zTBK+hy2/ykLBwWf0kWvK1g+d9nue6ow1GhuRkBvO0r6AHmo4nCh457FYDXhwY+Q6JGuV3Tj0SVwwxup6PQLy4wDAGp48rrJWpFtQEO+IGRaZG4te3oFtYbLHj3ubBEGNiQCZtYmwVyWLZMXmkbWgJmlInC0ozHlGUqIQAY3TpEzUAM1LiIymdIKKhjfhP4T6FJ6KirZag2GjoEWXMoN0Hcnbukgb2PK4uhKV8/7dquGLwrQ4gH3kiTBgCJG6U5cVYRjbo9nDVXumRF+yb6c5VaTcoiZVEjtEKNA3ZmxVQFzaf3pLvwj0nRbW2svOwQ/eu/C31cvRShnI5qsHEoOdC4qGI+SqTpWKKt0M6t90Tz2/Ncylu4yfLuC6kLJ1KV5Y26wgoOK5Bysk87EYFr3tqfaHn1WunblySVtV2K0CywrZtukaSVN9WOPgmCSpqOq0ejFLJJ0uN9Nm/N30VSLJhqUChIbYGukLigFxVEsR6z4zCNqNh3WdCDsQdiqnVFTsejxalWrhrv/eU/vD42/iA+LqPBKa767DU0bbKwESZi7jx5Dz20Ytx/aWNm3u3mNpBbeOK8OhaoWizcx7I+HQnTRYzdJ+jbxqz/2Q==);
+}
+div {
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #832e83;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #9f6e9f;
+  margin: 0px 0 10px 0;
+}
+p {
+  color: rgba(159, 110, 159, 1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.princess{
+  background-image: url("https://hitchedukir.hitched.co.uk/Fashion/230_345_scaled_1786186_148474111728520wedding20dresses202017-1484741218789.jpg");
+
+}
+
+.mermaid{
+  background-image: url("https://cdn.shopify.com/s/files/1/1312/6955/products/product-image-70387377_1024x1024.jpg?v=1476216971");
+
+}
+.fifties{
+  background-image: url("https://cdn.shopify.com/s/files/1/0506/0065/files/blogimage4.png?v=1523577163");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Bridal Guide</h1>
+<h2>Dress Styles</h2>
+<ul>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Dress Styles</a></li>
+     <li><a href="#">Accessories</a></li>
+     <li><a href="#">Contact</a></li>
+   </ul>
+<div class="princess">
+  <p>Princess Style<span class="price"></span><br />
+  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+</div>
+
+<div class="mermaid">
+  <p> Mermaid Style <span class="price"></span><br />
+  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+
+<div class="fifties">
+  <p> Fifties Style <span class="price"></span><br />
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
